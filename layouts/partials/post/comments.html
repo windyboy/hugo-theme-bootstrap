@@ -5,11 +5,14 @@
     <h2 class="card-title my-2 fs-4 text-surface">{{ i18n "comments" }}</h2>
   </div>
   <div class="card-body">
+    <!--
     {{- partial "post/comments/disqus.html" . -}}
     {{- partial "post/comments/utterances" . -}}
     {{- partial "post/comments/giscus" . -}}
     {{- partial "post/comments/staticman" . -}}
     {{- partial "post/comments/custom" . -}}
+    -->
+    {{- partial "post/comments/remark42.html" . -}}
   </div>
 </div>
 {{- partial "hooks/comments-end" . -}}
